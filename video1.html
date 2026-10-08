@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>WELCOME</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #f1f1f1;
+  color: #333;
+  font: 12px Arial, sans-serif;
+}
+
+a {
+  color: #167ac6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 12px max(calc((100% - 1120px)/2), 18px);
+  background: linear-gradient(white, #f5f5f5);
+  border-bottom: 1px solid #ddd;
+}
+
+.logo img {
+  width: 150px;
+  display: block;
+}
+
+form {
+  display: flex;
+  width: 550px;
+  max-width: 100%;
+  height: 29px;
+}
+
+input {
+  flex: 1;
+  min-width: 0;
+  padding: 5px;
+  border: 1px solid #bbb;
+  font-size: 14px;
+}
+
+button {
+  border: 1px solid #bbb;
+  background: linear-gradient(white, #e5e5e5);
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+main {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 10px;
+}
+
+.video-player {
+  width: 100%;
+  background: #000;
+}
+
+.video-player video {
+  width: 100%;
+  display: block;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: normal;
+  margin: 12px 0 6px;
+}
+
+.meta {
+  color: #777;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 12px;
+}
+
+.actions {
+  padding: 12px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.like {
+  display: inline-block;
+  border: 1px solid #bbb;
+  background: linear-gradient(white, #e5e5e5);
+  padding: 6px 12px;
+  color: #333;
+}
+
+.description {
+  padding: 15px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.comments-title {
+  font-size: 16px;
+  font-weight: normal;
+  margin: 20px 0 15px;
+}
+
+.comment {
+  display: flex;
+  gap: 10px;
+  padding: 12px 0;
+  border-top: 1px solid #ddd;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background: #bbb;
+  flex-shrink: 0;
+}
+
+.comment-user {
+  font-weight: bold;
+  color: #167ac6;
+  margin-bottom: 5px;
+}
+
+.comment-text {
+  line-height: 1.5;
+}
+
+footer {
+  border-top: 1px solid #ccc;
+  color: #888;
+  margin-top: 30px;
+  padding: 15px 0;
+}
+
+@media (max-width: 750px) {
+  header {
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .logo img {
+    width: 120px;
+  }
+
+  main {
+    margin-top: 10px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <a class="logo" href="index.html">
+    <img src="youtube2logo.png" alt="YouTube">
+  </a>
+
+  <form>
+    <input placeholder="Search videos...">
+    <button>Search</button>
+  </form>
+</header>
+
+<main>
+
+  <div class="video-player">
+    <video controls>
+      <source src="youtube2.mp4" type="video/mp4">
+      Your browser does not support video.
+    </video>
+  </div>
+
+  <h1 class="title">WELCOME TO YOUTUBE 2...</h1>
+
+  <div class="meta">
+    Youtube 2 · 1 views · forever days ago
+  </div>
+
+  <div class="actions">
+    <span class="like">👍 ∞ LIKES</span>
+  </div>
+
+  <div class="description">
+    <b>Youtube 2</b><br>
+    You Need An Introduction
+  </div>
+
+  <h2 class="comments-title">Comments</h2>
+
+  <div class="comment">
+    <div class="avatar"></div>
+    <div>
+      <div class="comment-user">CoolDude2010</div>
+      <div class="comment-text">
+        LOL THE PIG IS SO FUCKING FAT AAAAAAAAAAAAAUGH 😂😂😂
+      </div>
+    </div>
+  </div>
+
+  <div class="comment">
+    <div class="avatar"></div>
+    <div>
+      <div class="comment-user">SONIC.EXE</div>
+      <div class="comment-text">
+        im gonna kill you for this
+      </div>
+    </div>
+  </div>
+
+  <div class="comment">
+    <div class="avatar"></div>
+    <div>
+      <div class="comment-user">YoutubeFan100</div>
+      <div class="comment-text">
+        OH MY GOD THIS SEKUEL IS SICKK!!!!
+      </div>
+    </div>
+  </div>
+
+  <div class="comment">
+    <div class="avatar"></div>
+    <div>
+      <div class="comment-user">PenisMOnkey</div>
+      <div class="comment-text">
+        this deserves more views
+      </div>
+    </div>
+  </div>
+
+  <div class="comment">
+    <div class="avatar"></div>
+    <div>
+      <div class="comment-user">I'mGay</div>
+      <div class="comment-text">
+        omg
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    About · Press · Copyright · Creators · Advertise · Developers
+    <p>YOUTUBE 2!, LLC · Broadcast Yourself™</p>
+  </footer>
+
+</main>
+
+</body>
+</html>
