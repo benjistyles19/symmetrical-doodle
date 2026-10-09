@@ -178,11 +178,17 @@ footer {
   </footer>
 </main>
 
+
 <script>
 document.getElementById("search").addEventListener("submit", function(e) {
   e.preventDefault();
 
-  const query = document.getElementById("query").value.toLowerCase();
+  const query = document.getElementById("query").value.trim().toLowerCase();
+
+  if (query === "codes") {
+    window.location.href = "codes.html";
+    return;
+  }
 
   document.querySelectorAll(".video").forEach(video => {
     video.hidden = !(
