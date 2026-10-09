@@ -2,7 +2,7 @@
 const codes = {
   "YOUTUBE3": {
     type: "url",
-    destination: "https://example.com"
+    destination: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
   },
 
   "FREEVIDEO": {
