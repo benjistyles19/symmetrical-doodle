@@ -1,4 +1,4 @@
-// you ruined the magic. WHY ARE YOU IN HERE, ASSHOLE!
+// you ruined the magic. WHY ARE YOU IN HERE!
 const codes = {
   "YOUTUBE3": {
     type: "url",
@@ -13,6 +13,11 @@ const codes = {
   "PUMKIN": {
     type: "message",
     destination: "CONGRATULATIONS. YOU HAVE DONE NOTHING."
+    },
+
+  "CHEESEBOY": {
+    type: "message",
+    destination: "WATCH ON THE CHANNEL!"
   }
 };
 
