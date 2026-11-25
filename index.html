@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -63,16 +64,43 @@
         .whats-new p {
             font-size: 14px;
         }
+
+        #gov-warning {
+            position: fixed;
+            inset: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 999999;
+            cursor: pointer;
+        }
+
+        #gov-warning img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+            image-rendering: pixelated;
+            image-rendering: crisp-edges;
+        }
+
+        #gov-warning.hidden {
+            display: none;
+        }
     </style>
 </head>
 
 <body class="vc-init">
 
+    <!-- Government warning -->
+    <div id="gov-warning" onclick="this.classList.add('hidden')">
+        <img src="govwarning.png" alt="Warning too cool, click anywhere to continue.">
+    </div>
+
     <div class="homepage">
 
         <div class="main-content">
             <p>Hey welcome to...</p>
-<h1>BENJISTYLES19.COM</h1>
+            <h1>BENJISTYLES19.COM</h1>
 
             <p></p>
 
@@ -96,8 +124,8 @@
 
         <aside class="whats-new">
             <h2>WHAT'S NEW?</h2>
-            <p><b>11/13/2026</b></p>
-            <p>Added a "What's New?" Section!!!</p>
+            <p><b>11/24/2026</b></p>
+            <p>Added a warning</p>
         </aside>
 
     </div>
